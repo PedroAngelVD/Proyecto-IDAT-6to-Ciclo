@@ -1,0 +1,5 @@
+npm install -g @angular/cli ==> instalar angular
+ng new miProyecto ==> crear nuevo proyecto(tiene que estar en la ruta definida)
+ng serve ==> ejecuta la aplicacion
+ng g c Component ==> con este comando se crea los componentes
+ng g s Service ==> con este comando se crea los servicios

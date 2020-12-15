@@ -1,0 +1,39 @@
+<div class="container col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3>Modificar Profesor</h3>
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="nombres">Nombres: </label>
+                        <input [(ngModel)]="profesor.nombres" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos: </label>
+                        <input [(ngModel)]="profesor.apellidos" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Direccion: </label>
+                        <input [(ngModel)]="profesor.direccion" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono: </label>
+                        <input [(ngModel)]="profesor.telefono" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="celular">Celular: </label>
+                        <input [(ngModel)]="profesor.celular" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexo">Sexo:</label>
+                        <select [(ngModel)]="profesor.sexo" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                            <option>F</option>
+                            <option>M</option>
+                        </select>
+                    </div>
+                    <button (click)="Actualizar(profesor)" class="btn btn-danger">Actualizar</button>
+                </form>
+            </div>
+        </div>
+    </div>

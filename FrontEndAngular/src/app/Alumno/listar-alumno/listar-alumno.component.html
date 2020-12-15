@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header text-white bg-primary">
+                <div class="row">
+                        <div class="col-md">
+                    <h3>Alumno</h3>
+                </div>
+                <div class="col-md" align="right">
+                        <button style="margin: 5px;" type="button" class="btn btn-outline-light" (click)="imprimirLista()">Generar PDF</button>
+                    </div>
+                </div>
+        </div> 
+        <div class="card-body">
+                <input class="form-control" type="text" id="myInput" placeholder="Buscar.."><br>
+            <table class="table table-striped table-sm" cellspacing="0"
+            width="100%" id="frmAlumno">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>CODIGO</th>
+                        <th>NOMBRES</th>
+                        <th>APELLIDOS</th>
+                        <th>GRADO</th>
+                        <th>SECCION</th>
+                        <th>PRIM/SEC</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr *ngFor="let alum of alumno" class="text-center">
+                        <td>{{alum.id_alumno}}</td>
+                        <td>{{alum.cod_alumno}}</td>
+                        <td>{{alum.nombres_alumno}}</td>
+                        <td>{{alum.apellidos_alumno}}</td>
+                        <td>{{alum.grado}}</td>
+                        <td>{{alum.seccion}}</td>
+                        <td>{{alum.primsec}}</td>
+                        <td>
+                            <button (click)="Editar(alum)" class="btn btn-warning">Editar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

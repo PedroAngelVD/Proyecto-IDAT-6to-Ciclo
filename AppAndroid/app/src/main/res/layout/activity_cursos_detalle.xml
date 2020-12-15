@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CursosDetalleActivity">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="25dp"
+            android:text="@string/CursosDetalle"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="25dp"
+            android:id="@+id/tvCursosDetalle"/>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/nombresAlumno"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tvNombProfesor"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/apellidosAlumno"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tvApeProfesor"/>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/GradoSeccion"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="right"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:id="@+id/tvGradoDetalle"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/tvSeccionDetalle"/>
+    </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/PrimSec"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tvPrimSecDetalle"/>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/Horario_Inicio"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tvHoraInicio"/>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="@string/Horario_Fin"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvHoraFin"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlanco"
+        android:background="@drawable/txt_circular"
+        android:id="@+id/btnVerNotas"
+        android:text="@string/verNotas"/>
+
+</LinearLayout>

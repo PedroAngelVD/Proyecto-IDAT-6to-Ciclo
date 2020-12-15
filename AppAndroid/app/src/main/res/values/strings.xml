@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">AppJeanPiaget</string>
+    <string name="valetUsuario">Ingresar Usuario ejem: \"A101010\"</string>
+    <string name="valetPassword">Ingrese Contraseña</string>
+    <string name="valbtnIngresar">Ingresar</string>
+    <string name="valbtnReinscripcion">Reinscripcion</string>
+    <string name="valbtnMensualidad">Mensualidad</string>
+    <string name="valbtnDatosAlumno">Datos Alumno</string>
+    <string name="valbtnCursos">Cursos</string>
+    <string name="CerrarSesion">Cerrar Sesion</string>
+    <string name="nombresAlumno">Nombres :</string>
+    <string name="apellidosAlumno">Apellidos :</string>
+    <string name="Grado">Grado :</string>
+    <string name="Seccion">Seccion :</string>
+    <string name="PrimSec">Prim/Sec :</string>
+    <string name="CursosDetalle">Curso :</string>
+    <string name="Horario_Inicio">Inicio :</string>
+    <string name="Horario_Fin">Fin :</string>
+    <string name="nota1">Nota 1</string>
+    <string name="nota2">Nota 2</string>
+    <string name="nota3">Nota 3</string>
+    <string name="nota4">Nota 4</string>
+    <string name="verNotas">Ver Notas</string>
+    <string name="CodMensualidad">Codigo :</string>
+    <string name="descripcion">Descripcion :</string>
+    <string name="monto">Monto :</string>
+    <string name="vencimiento">Vencimiento :</string>
+    <string name="Cod_Rescripcion">Cod_Rescripcion :</string>
+    <string name="estado">Estado :</string>
+    <string name="Pagar">Pagar</string>
+    <string name="numeroTarjeta">Numero de tarjeta</string>
+    <string name="TituloTarjeta">Método de Pago</string>
+    <string name="CVV">CVV</string>
+    <string name="mesVencimiento">Mes de vencimiento</string>
+    <string name="añoVencimiento">Año de vencimiento</string>
+    <string name="ClaveSeguridad">Clave de seguridad</string>
+    <string name="nombreTitularTarjeta">Nombre del titular de la tarjeta</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="tipoDocumento">Tipo de documento</string>
+    <string name="numeroDocumento">N° de Documento</string>
+    <string name="btnPagar">Pagar</string>
+    <string name="continuar">Continuar</string>
+    <string name="jeanPiaget">Jean Piaget</string>
+    <string name="GradoSeccion">Grado y Seccion :</string>
+    <string name="valFecha_Ven">FV :</string>
+    <string name="valTituloMenvec">Fecha de Vencimiento Mensualidad</string>
+    <string name="mesAnio">Mes/Año</string>
+
+
+    <string-array name="tipoDocumento">
+        <item>DNI</item>
+        <item>Carnet de Extranjeria</item>
+        <item>Pasaporte</item>
+    </string-array>
+</resources>

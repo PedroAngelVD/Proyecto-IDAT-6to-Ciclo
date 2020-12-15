@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header text-white bg-primary">
+            <div class="row">
+                <div class="col-md">
+                    <h3>Mensualidad</h3>
+                </div>
+                <div class="col-md" align="right">
+                        <button style="margin: 5px;" type="button" class="btn btn-outline-light" (click)="imprimirLista()">Generar PDF</button>
+                    <button style="margin: 5px;" type="button" (click)="Agregar(mensualidad)" class="btn btn-outline-light">Agregar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+                <input class="form-control" type="text" id="myInput" placeholder="Buscar.."><br>
+            <table class="table table-striped table-sm" cellspacing="0"
+            width="100%" id="frmMensualidad">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>CODIGO</th>
+                        <th>DESCRIPCION</th>
+                        <th>MONTO</th>
+                        <th>VENCIMIENTO</th>
+                        <th>COD_REINSCRIPCION</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr *ngFor="let mensu of mensualidad" class="text-center">
+                        <td>{{mensu.id_hab_mensualidad}}</td>
+                        <td>{{mensu.cod_mensualidad}}</td>
+                        <td>{{mensu.descripcion}}</td>
+                        <td>{{mensu.monto}}</td>
+                        <td>{{mensu.vencimiento}}</td>
+                        <td>{{mensu.codigo_reinscripcion}}</td>
+                        <td>
+                            <button (click)="Editar(mensu)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(mensu)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

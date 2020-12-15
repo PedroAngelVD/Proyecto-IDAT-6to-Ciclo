@@ -1,0 +1,38 @@
+package com.demo.service.impl;
+
+import java.util.List;
+
+import javax.ejb.EJB;
+import javax.inject.Named;
+
+import com.demo.dao.IPersonaDAO;
+import com.demo.model.Persona;
+import com.demo.service.IPersonaService;
+
+@Named //permite dale un nombre a la implemnetacion
+public class PersonaServiceImpl implements IPersonaService {
+
+	@EJB
+	private IPersonaDAO dao;
+
+	@Override
+	public Persona registrar(Persona persona) throws Exception {
+		return dao.guardar(persona);
+	}
+
+	@Override
+	public Persona actualizar(Persona persona) throws Exception {
+		return dao.actualizar(persona);
+	}
+
+	@Override
+	public Persona buscar(int id) throws Exception {
+		return dao.buscarPorId(id);
+	}
+
+	@Override
+	public List<Persona> listarTodos() throws Exception {
+		return dao.listar();
+	}
+	
+}

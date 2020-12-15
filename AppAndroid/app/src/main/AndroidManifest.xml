@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="idat.edu.pe">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".QRResActivity"></activity>
+        <activity android:name=".PagoRes1Activity" android:theme="@style/azul"/>
+        <activity android:name=".QRMenActivity" />
+        <activity android:name=".PagoMen1Activity" android:theme="@style/azul"/>
+        <activity android:name=".MensualidadDetalleActivity" />
+        <activity android:name=".NotasCursoActivity" />
+        <activity android:name=".CursosDetalleActivity" />
+        <activity android:name=".DatosAlumnoActivity" />
+        <activity android:name=".CursosActivity" />
+        <activity android:name=".MensualidadActivity" />
+        <activity android:name=".ReinscripcionActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

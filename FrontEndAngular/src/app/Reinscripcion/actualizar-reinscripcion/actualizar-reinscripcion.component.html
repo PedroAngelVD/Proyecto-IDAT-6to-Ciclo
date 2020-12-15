@@ -1,0 +1,24 @@
+<div class="container col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3>Modificar Reinscripcion</h3>
+            </div>
+            <div class="card-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion: </label>
+                        <input #descripcion [(ngModel)]="reinscripcion.descripcion" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="monto">Monto: </label>
+                        <input #monto [(ngModel)]="reinscripcion.monto" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <div class="form-group">
+                        <label for="vencimiento">Vencimiento: </label>
+                        <input #vencimiento [(ngModel)]="reinscripcion.vencimiento" type="date" class="form-control" [ngModelOptions]="{standalone: true}">
+                    </div>
+                    <button (click)="Actualizar(descripcion.value, monto.value, vencimiento.value)" class="btn btn-danger">Actualizar</button>
+                </form>
+            </div>
+        </div>
+    </div>

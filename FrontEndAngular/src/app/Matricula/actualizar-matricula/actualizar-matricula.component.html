@@ -1,0 +1,39 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Modificar Matricula</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="nombres_alumno">Nombres: </label>
+                    <input [(ngModel)]="matricula.nombres_alumno" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="apellidos_alumno">Apellidos: </label>
+                    <input [(ngModel)]="matricula.apellidos_alumno" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Direccion: </label>
+                    <input [(ngModel)]="matricula.direccion" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono: </label>
+                    <input [(ngModel)]="matricula.telefono" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input [(ngModel)]="matricula.celular" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select [(ngModel)]="matricula.sexo" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                        <option>F</option>
+                        <option>M</option>
+                    </select>
+                </div>
+                <button (click)="Actualizar(matricula)" class="btn btn-danger">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

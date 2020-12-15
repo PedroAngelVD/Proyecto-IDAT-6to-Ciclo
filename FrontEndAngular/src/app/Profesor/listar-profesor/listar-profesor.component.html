@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header text-white bg-primary">
+            <div class="row">
+                <div class="col-md">
+                    <h3>Profesores</h3>
+                </div>
+                <div class="col-md" align="right">
+                        <button style="margin: 5px;" type="button" class="btn btn-outline-light" (click)="imprimirLista()">Generar PDF</button>
+                        <button style="margin: 5px" type="button" (click)="Agregar(profesor)" class="btn btn-outline-light" >Agregar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body" >
+                <input class="form-control" type="text" id="myInput" placeholder="Buscar.."><br>
+
+            <table class="table table-striped table-sm" cellspacing="0"
+            width="100%" id="frmProfesores"> 
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>NOMBRES</th>
+                        <th>APELLIDOS</th>
+                        <th>DNI</th>
+                        <th>DIRECCION</th>
+                        <th>TELEFONO</th>
+                        <th>CELULAR</th>
+                        <th>SEXO</th>
+                        <th>FECHA</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr *ngFor="let profesor of profesores" class="text-center">
+                        <td>{{profesor.id_profesor}}</td>
+                        <td>{{profesor.nombres}}</td>
+                        <td>{{profesor.apellidos}}</td>
+                        <td>{{profesor.dni}}</td>
+                        <td>{{profesor.direccion}}</td>
+                        <td>{{profesor.telefono}}</td>
+                        <td>{{profesor.celular}}</td>
+                        <td>{{profesor.sexo}}</td>
+                        <td>{{profesor.fec_registro}}</td>
+                        <td>
+                            <button (click)="Editar(profesor)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(profesor)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Matricula</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="nombres_alumno">Nombres: </label>
+                    <input #nombres_alumno type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="apellidos_alumno">Apellidos: </label>
+                    <input #apellidos_alumno type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="fec_nacimiento">Nacimiento: </label>
+                    <input #fec_nacimiento type="date" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="dni">Dni: </label>
+                    <input #dni type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Direccion: </label>
+                    <input #direccion type="text" class="form-control">
+                </div>    
+
+                <div class="form-group">
+                    <label for="telefono">Telefono: </label>
+                    <input #telefono type="text" class="form-control">
+                </div>  
+
+                <div class="form-group">
+                    <label for="celular">Celular: </label>
+                    <input #celular type="text" class="form-control">
+                </div> 
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select #sexo type="text" class="form-control">
+                        <option>F</option>
+                        <option>M</option>
+                    </select>
+                </div>
+                <button (click)="Guardar(nombres_alumno.value, apellidos_alumno.value, fec_nacimiento.value, dni.value, direccion.value, telefono.value, celular.value, sexo.value)" class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

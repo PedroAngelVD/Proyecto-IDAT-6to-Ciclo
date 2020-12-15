@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:weightSum="2"
+    android:background="@color/colorAzul"
+    android:orientation="vertical"
+    tools:context=".NotasCursoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_circular"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/nota1"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNota1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_circular"
+            android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/nota2"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNota2"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_circular"
+            android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:text="@string/nota3"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNota3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_circular"
+            android:orientation="vertical">
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:textColor="@color/colorAzul"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/nota4"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:gravity="center"
+            android:textColor="@color/colorAzul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvNota4"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

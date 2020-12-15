@@ -1,0 +1,7 @@
+{
+    "/rest/*":{
+        "target":"http://localhost:8087/Web06",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

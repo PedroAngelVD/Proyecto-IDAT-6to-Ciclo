@@ -1,0 +1,111 @@
+<br>
+<br>
+<br>
+<div class="row">
+<div class="col-sm-5">
+  <div>
+    <div align="center">
+      <h4>Alumnos x Género</h4>
+      <div class="chart">
+        <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [options]="pieChartOptions"
+          [plugins]="pieChartPlugins"
+          [colors]="pieChartColors"
+          [legend]="pieChartLegend">
+        </canvas>
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+</div>
+<div class="col-sm-6">
+
+<div align="center">
+  <h4>Alumnos x Grado</h4>
+    <div>
+      <div style="display: block">
+        <canvas
+        baseChart [datasets]="barChartData" 
+        [labels]="barChartLabels" 
+        [options]="barChartOptions"
+        [legend]="barChartLegend"  
+        [chartType]="barChartType" 
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+      <br>
+      <br>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<br><br>
+<br><br>
+
+  <div class="col-sm-12">
+    <div align="center">
+      <h4>Matriculas Totales x (Año)</h4>
+      <br>
+      <div>
+        <div style="display: block">
+          <canvas baseChart
+            [data]="polarAreaChartData"
+            [options]="polarAreaChartOptions"
+            [labels]="polarAreaChartLabels"
+            [legend]="polarAreaLegend"
+            [chartType]="polarAreaChartType">
+          </canvas>
+        </div>
+      </div>
+  </div>
+</div>
+
+<br><br>
+<br><br>
+
+  <div class="col-sm-12">
+    <div align="center">
+      <h4>Reinscripciones Totales x (Año)</h4>
+      <br>
+      <div>
+        <div style="display: block">
+          <canvas baseChart
+            [data]="polar2AreaChartData"
+            [options]="polar2AreaChartOptions"
+            [labels]="polar2AreaChartLabels"
+            [legend]="polar2AreaLegend"
+            [chartType]="polar2AreaChartType">
+          </canvas>
+        </div>
+      </div>
+  </div>
+</div>
+
+<br><br>
+
+<div align="center">
+    <h4>Pago Mensualidad x (Mes)</h4>
+      <div>
+        <div style="display: block">
+          <canvas 
+          baseChart [datasets]="bar2ChartData" 
+          [labels]="bar2ChartLabels" 
+          [options]="bar2ChartOptions"
+          [legend]="bar2ChartLegend"  
+          [chartType]="bar2ChartType" 
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+          </canvas>
+        </div>
+        <br>
+        <br>
+      </div>
+  </div>

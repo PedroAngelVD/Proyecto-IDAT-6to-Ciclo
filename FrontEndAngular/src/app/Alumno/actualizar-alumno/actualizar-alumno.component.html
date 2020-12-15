@@ -1,0 +1,34 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Modificar Alumno</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+
+                <div class="form-group">
+                    <label for="grado">Grado: </label>
+                    <select [(ngModel)]="alumno.grado" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let obj3 of objeto3">{{obj3.grados}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                        <label for="seccion">Seccion: </label>
+                        <select [(ngModel)]="alumno.seccion" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                            <option *ngFor="let obj2 of objeto2">{{obj2.secciones}}</option>    
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="primsec">Prim/Sec: </label>
+                    <select [(ngModel)]="alumno.primsec" type="text" class="form-control" [ngModelOptions]="{standalone: true}">
+                        <option *ngFor="let obj of objeto">{{obj.primasecu}}</option>
+                    </select>
+                </div>
+                
+                <button (click)="Actualizar(alumno)" class="btn btn-danger">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

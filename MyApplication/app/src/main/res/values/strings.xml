@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppKotlin</string>
+    <string name="valetnumero1">Ingrese Número 1</string>
+    <string name="valetnumero2">Ingrese Número 2</string>
+    <string name="valbtnCalcular">Calcular</string>
+    <string name="valtvResultado">Resultado..</string>
+    <string name="valetpeso">Ingrese su Peso</string>
+    <string name="valettalla">Ingrese su Talla</string>
+    <string name="valbtnActivity">Activity 2</string>
+</resources>

@@ -1,0 +1,5 @@
+npm init --yes ==> agrega el package.json de configuracion
+npm install express mysql ==> descarga estos modulos (MySQL y Express)
+node src/index.js ==> ejecutamos index.js
+npm install nodemon -D ==> instala modulo de desarrollo nodemon que refresca el servidor.
+npm run dev ==> ejecuta los comandos de la ruta dev en el package.json del proyecto

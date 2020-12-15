@@ -1,0 +1,78 @@
+package com.demo.controller;
+
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.core.MediaType;
+
+import com.demo.model.Persona;
+import com.demo.service.IPersonaService;
+
+@Path("/personas")
+public class PersonaController {
+
+	@Inject //identifica un punto el cual una dependencia en una clase o interfaz Java puede ser inyectada en una clase destino
+	private IPersonaService service;
+	
+	
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	public List<Persona> listar() {
+		try {
+			return service.listarTodos();
+		} catch (Exception e) {
+			throw new WebApplicationException(4099);
+		}
+	}
+	
+	
+	@GET
+	@Path("/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Persona buscar(@PathParam("id") int id) {
+		try {
+			Persona persona = service.buscar(id);
+			if(persona == null)
+				throw new WebApplicationException(404);
+			return persona;
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+			throw new WebApplicationException(500);
+		}
+	}
+	
+	@POST
+	@Path("/")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Persona save(Persona persona) {
+		try {
+			return service.registrar(persona);
+		} catch (Exception e) {
+			throw new WebApplicationException(500);
+		}
+	}
+	
+	@PUT
+	@Path("/")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Persona update(Persona persona) {
+		try {
+			return service.actualizar(persona);
+		} catch (Exception e) {
+			throw new WebApplicationException(404);
+		}
+	}
+	
+}

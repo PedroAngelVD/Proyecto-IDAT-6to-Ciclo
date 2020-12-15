@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-header text-white bg-primary">
+            <div class="row">
+                <div class="col-md">
+                    <h3>Matriculas</h3>
+                </div>
+                <div class="col-md" align="right">
+                        <button style="margin: 5px;" type="button" class="btn btn-outline-light" (click)="imprimirLista()">Generar PDF</button>
+                    <button style="margin: 5px;" type="button" (click)="Agregar(matricula)" class="btn btn btn-outline-light">Agregar</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+                <input class="form-control" type="text" id="myInput" placeholder="Buscar.."><br>
+            <table class="table table-striped table-sm" cellspacing="0"
+            width="100%" id="frmMatricula">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>N°</th>
+                        <th>CODIGO</th>
+                        <th>NOMBRES</th>
+                        <th>APELLIDOS</th>
+                        <th>NACIMIENTO</th>
+                        <th>FECHA</th>
+                        <th>DNI</th>
+                        <th>DIRECCION</th>
+                        <th>TELEFONO</th>
+                        <th>CELULAR</th>
+                        <th>SEXO</th>
+                        <th>ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    <tr *ngFor="let matricula of matriculas" class="text-center">
+                        <td>{{matricula.id_matricula}}</td>
+                        <td>{{matricula.numero_matricula}}</td>
+                        <td>{{matricula.cod_alumno}}</td>
+                        <td>{{matricula.nombres_alumno}}</td>
+                        <td>{{matricula.apellidos_alumno}}</td>
+                        <td>{{matricula.fec_nacimiento}}</td>
+                        <td>{{matricula.fec_registro}}</td>
+                        <td>{{matricula.dni}}</td>
+                        <td>{{matricula.direccion}}</td>
+                        <td>{{matricula.telefono}}</td>
+                        <td>{{matricula.celular}}</td>
+                        <td>{{matricula.sexo}}</td>
+                        <td>
+                            <button (click)="Editar(matricula)" class="btn btn-warning">Editar</button>
+                            <button (click)="Eliminar(matricula)" class="btn btn-danger" style="margin-left: 10px;">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
